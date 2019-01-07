@@ -56,4 +56,5 @@ public abstract class BaseCardItem {
     public void setMaxRotation(int maxRotation) {
         this.maxRotation = maxRotation;
     }
+
 }

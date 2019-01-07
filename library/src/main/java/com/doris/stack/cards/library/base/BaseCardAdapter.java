@@ -78,6 +78,13 @@ public class BaseCardAdapter<T extends BaseCardItem> extends StackCardsView.Adap
         return null;
     }
 
+    public void clearData(){
+        if (mData.size() > 0){
+            mData.clear();
+            notifyDataSetChanged();
+        }
+    }
+
     public void appendData(List<T> data){
         if (data != null && data.size() > 0){
             mData.addAll(data);
